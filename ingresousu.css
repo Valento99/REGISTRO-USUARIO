@@ -1,0 +1,51 @@
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Para ocultar el desbordamiento durante la animación */
+      background-image: url('code.png');
+      background-size: cover;
+    }
+
+    .formulario {
+      text-align: center;
+      width: 400px;
+      padding: 30px;
+      border: 1px groove #007bff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease-in-out; /* Transición para la animación */
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .formulario input {
+      width: calc(100% - 20px);
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out; /* Transición para el hover */
+    }
+
+    .formulario input:hover {
+      transform: scale(1.05); /* Efecto de escala al pasar el ratón por encima */
+    }
+
+    .formulario button {
+      width: calc(100% - 20px);
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #0056b3;
+    }
